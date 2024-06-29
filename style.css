@@ -13,6 +13,23 @@ body {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    font-size: 16px; /* Standard-Schriftgröße für größere Bildschirme */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Kleinere Schriftgröße für Handys */
+    }
+
+    /* Spezifische Anpassungen für Überschriften */
+    h1 {
+        font-size: 22px; /* Beispiel für eine andere Schriftgröße für h1 auf Handys */
+    }
+
+    /* Spezifische Anpassungen für Abschnitts-Texte */
+    p {
+        font-size: 14px; /* Beispiel für eine andere Schriftgröße für Paragraphen auf Handys */
+    }
 }
 
 /*--------------------------Global styles------------------------------*/
