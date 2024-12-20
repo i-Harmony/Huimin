@@ -3,6 +3,7 @@
     silver #c0c0c0
     white #ffffff
     pink #ffc0cb
+Editor: Huimin Luo
 */
 
 body {
@@ -13,22 +14,26 @@ body {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    font-size: 16px; /* Standard-Schriftgröße für größere Bildschirme */
+    font-size: 16px;
+    /* Standard-Schriftgröße für größere Bildschirme */
 }
 
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* Kleinere Schriftgröße für Handys */
+        font-size: 14px;
+        /* Kleinere Schriftgröße für Handys */
     }
 
     /* Spezifische Anpassungen für Überschriften */
     h1 {
-        font-size: 22px; /* Beispiel für eine andere Schriftgröße für h1 auf Handys */
+        font-size: 22px;
+        /* Beispiel für eine andere Schriftgröße für h1 auf Handys */
     }
 
     /* Spezifische Anpassungen für Abschnitts-Texte */
     p {
-        font-size: 14px; /* Beispiel für eine andere Schriftgröße für Paragraphen auf Handys */
+        font-size: 14px;
+        /* Beispiel für eine andere Schriftgröße für Paragraphen auf Handys */
     }
 }
 
@@ -41,15 +46,15 @@ nav {
     top: 0;
 }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 11px;
-        text-transform: uppercase;
-        color: black;
-    }
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: black;
+}
 
 @media (min-width: 44em) {
     nav a {
@@ -68,9 +73,10 @@ header {
     color: white;
 }
 
-    header h1, header h2 {
-        color: white;
-    }
+header h1,
+header h2 {
+    color: white;
+}
 
 h1 {
     margin: 0;
@@ -114,7 +120,7 @@ h1 {
 }
 
 /* PDF Button Style */
-    .pdf-button {
+.pdf-button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
@@ -129,9 +135,9 @@ h1 {
     bottom: 0;
 }
 
-    .pdf-button:hover {
-        background-color: #444444;
-    }
+.pdf-button:hover {
+    background-color: #444444;
+}
 
 /*------------------about me----------------------------------*/
 .introduction {
@@ -146,45 +152,44 @@ h1 {
     max-width: 950px;
 }
 
-    /*------------------work----------------------------------*/
-    .work-experience{
-        padding-top: 10px;
-        background-color: white;
-    }
+/*------------------work----------------------------------*/
+.work-experience {
+    padding-top: 10px;
+    background-color: white;
+}
 
-    .work-wrapper {
-        margin: 0 auto;
-        padding: 0 30px;
-        max-width: 950px;
-    }
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
 
+.job-wrapper {
+
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
     .job-wrapper {
-    
-        display: block;
-        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
     }
+}
 
-    @media (min-width: 935px){
-        .job-wrapper{
-            display:grid;
-            grid-template-columns:1fr 2.5fr;
-            column-gap: 30px;
-        }
-    }
+h3~p {
+    margin: 0;
+}
 
-    h3~p{
-        margin:0;
-    }
+@media (min-width:935px) {
+    .job-description p:first-of-type {}
+}
 
-    @media (min-width:935px) {
-        .job-description  p:first-of-type {
-        }
-    }
-
-    ul li {
-        margin: 8px 0;
-        padding-left: 15px;
-    }
+ul li {
+    margin: 8px 0;
+    padding-left: 15px;
+}
 
 
 
@@ -193,50 +198,49 @@ h1 {
     padding-top: 10px;
     background-color: grey;
     /*background: linear-gradient(rgba(141,153,174,0.9), rgba(141,153,174,0.7)),*/
-    background: linear-gradient(rgba( 192,192,192,0.9), rgba(192,192,192,0.7)),
-                url(./assets/world-map.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(192, 192, 192, 0.9), rgba(192, 192, 192, 0.7)),
+        url(./assets/world-map.jpg) no-repeat fixed;
     background-size: cover;
 }
 
-    .education-wrapper {
-        margin: 0 auto;
-        padding: 0 30px;
-        max-width: 950px;
-    }
+.education-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
 
+.edu-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
     .edu-wrapper {
-        display: block;
-        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
     }
+}
 
-    @media (min-width: 935px) {
-        .edu-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 2.5fr;
-            column-gap: 30px;
-        }
-    }
+h3~p {
+    margin: 0;
+}
 
-    h3 ~ p {
-        margin: 0;
-    }
+@media (min-width:935px) {
+    .edu-description p:first-of-type {}
+}
 
-    @media (min-width:935px) {
-        .edu-description p:first-of-type {
-        }
-    }
+ul li {
+    margin: 8px 0;
+    padding-left: 15px;
+}
 
-    ul li {
-        margin: 8px 0;
-        padding-left: 15px;
-    }
-
-    /*-----------------footer------------------------------*/
-    footer{
-        text-align:center;
-        background-color: dimgrey;
-        color: white;
-    }
+/*-----------------footer------------------------------*/
+footer {
+    text-align: center;
+    background-color: dimgrey;
+    color: white;
+}
 
 .contact-wrapper {
     margin: 0 auto;
@@ -246,26 +250,27 @@ h1 {
 
 .contact-buttons {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
+    justify-content: center;
+    /* Centers the buttons horizontally */
     align-items: center;
     gap: 100px;
 }
 
-    .media-pic{
-        width:50px;
-        height:50px;
-        border-radius: 50%;
-        border: black;
-    }
+.media-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: black;
+}
 
-    .media-pic:hover{
-        transform: scale(1.1);
-    }
+.media-pic:hover {
+    transform: scale(1.1);
+}
 
-    p+h3{
-        margin-top:30px;
-    }
+p+h3 {
+    margin-top: 30px;
+}
 
-    footer p{
-        margin-top:50px;
-    }
+footer p {
+    margin-top: 50px;
+}
